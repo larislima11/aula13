@@ -1,0 +1,50 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tela de Cadastro</title>
+
+  <!-- Bootstrap CSS -->
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container mt-5">
+    <h1>Cadastro de Pessoas</h1>
+    <div class="mb-3">
+      <label for="inputNome" class="form-label">Nome</label>
+      <input type="text" class="form-control" id="inputNome">
+    </div>
+    <div class="mb-3">
+      <label for="inputEmail" class="form-label">Email</label>
+      <input type="email" class="form-control" id="inputEmail">
+    </div>
+    <div class="mb-3">
+      <label for="inputTelefone" class="form-label">Telefone</label>
+      <input type="text" class="form-control" id="inputTelefone">
+    </div>
+    <button type="button" class="btn btn-primary" onclick="salvarPessoa()">Salvar</button>
+    <button type="button" class="btn btn-success" onclick="sincronizarPessoas()">Sincronizar</button>
+    <table class="table mt-3">
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Email</th>
+          <th>Telefone</th>
+        </tr>
+      </thead>
+      <tbody id="tabelaPessoas">
+      
+      </tbody>
+    </table>
+  </div>
+
+ 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+ 
+  <script src="script.js"></script>
+</body>
+</html>
